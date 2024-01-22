@@ -7,57 +7,149 @@
     <!-- Daisy Ui and Tailwind Css cdn links -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- custom color class  -->
+    <script>
+        tailwind.config={
+            theme:{
+                extend:{
+                    colors:{
+                        'teacolorone':'#F4F4F4',
+                        'teacolortwo':'rgba(244, 244, 244, 0.00)',
+                        'freshcolorone':'#F00',
+                        'freshcolortwo':'#FF8938',
+                        'freshcolorthree':'#D9D9D9',
+                        'freshcolorfour':'rgba(255, 255, 255, 0.00)',
+                        'freshone':'rgba(230, 166, 35, 0.10)',
+                        'freshtwo':'rgba(87, 118, 57, 0.10)',
 
+                    }
+                }
+            }
+
+        }
+    </script>
 
 
 
     <style>
+        *{
+            font-family: Manrope;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: black;
+        }
     </style>
 </head>
-<body class="">
-    <header class="container mx-auto">
-        <div class="navbar bg-base-100">
+<body class="bg-slate-50">
+    <header class="container mx-auto py-12 ">
+        <div class="navbar ">
             <div class="navbar-start">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1]  shadow  rounded-box w-52 text-center bg-gray-500 text-xl ">
+                    <li><a class="visited:text-[#FF4240]" >Home</a></li>
+                    <li><a class="visited:text-[#FF4240]">About</a></li>
+                    <li><a class="visited:text-[#FF4240]">Pages</a></li>
+                    <li><a class="visited:text-[#FF4240]">Blog</a></li>
+                    <li><a class="visited:text-[#FF4240]">Contact</a></li>
                 </ul>
               </div>
-              <a class="btn btn-ghost text-xl">Hockey’s</a>
+              <a class=" lg:text-4xl text-xl font-extrabold">Hockey<span class="text-[#FF4240] p-0 m-0">’</span>s</a>
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Item 1</a></li>
-                <li>
-                  <details>
-                    <summary>Parent</summary>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </details>
-                </li>
-                <li><a>Item 3</a></li>
+            <div class="navbar-center hidden  lg:flex">
+              <ul class="menu menu-horizontal text-xl px-11">
+                <li><a class="visited:text-[#FF4240]" href="https://www.facebook.com/" target="_blank">Home</a></li>
+                <li><a class="visited:text-[#FF4240]">About</a></li>
+                <li><a class="visited:text-[#FF4240]">Pages</a></li>
+                <li><a class="visited:text-[#FF4240]">Blog</a></li>
+                <li><a class="visited:text-[#FF4240]">Contact</a></li>
               </ul>
             </div>
-            <div class="navbar-end">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-              <a class="btn">Button</a>
+            <div class="navbar-end space-x-6">
+                <div class="inline relative">
+                    <input type="search" name="" class="hidden lg:inline lg:w-[16rem] lg:h-10 bg-transparent" id="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden lg:inline absolute right-0  top-[50%] -translate-y-[50%] " fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </div>
+              <a class="btn lg:w-36 lg:h-14 bg-[#FF4240] w-28 h-10 text-xs text-white lg:text-xl border-none font-bold">Get Ticket</a>
             </div>
           </div>
     </header>
-    <main></main>
+    <main class="container mx-auto">
+        <!-- carousol section starts  -->
+        <section class="relative mb-24 ">
+            <div class="carousel w-full lg:h-[34rem] rounded-2xl">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="./images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="./images/2.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class=" mt-4  lg:w-[35rem] lg:h-[12rem] bg-black lg:p-8 p-4 rounded lg:rounded-2xl lg:absolute sm:mt-4 right-8 bottom-8 space-y-4">
+                <h1 class="text-white text-xl lg:text-2xl font-extrabold">Meet all the heroes from the field</h1>
+                <p class="text-[#FFFFFF63] text-sm lg:text-xl font-medium leading-6">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+              </div>
+        </section>
+        <!-- hockeys club section  -->
+        <section class="text-center">
+            <h1 class="lg:text-4xl font-extrabold lg:mb-6">Professional Hockeys Club</h1>
+            <p class="lg:text-[1rem] font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+            <div class="progress-container gap-4 flex flex-col lg:flex-row justify-around items-center mt-20">
+                <div class="progress-card space-y-4 lg:w-60">
+                    <div class="radial-progress text-error" style="--value:87; --size:7.5rem; --thickness: 0.5rem;" role="progressbar">87%</div>
+                    <h5 class="text-xl font-semibold">Prayer Facility</h5>
+                    <p class="lg:text-[1rem] font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="progress-card space-y-4 lg:w-60">
+                    <div class="radial-progress text-success" style="--value:95; --size:7.5rem; --thickness: 0.5rem;" role="progressbar">95%</div>
+                    <h5 class="text-xl font-semibold">Experienced Coach</h5>
+                    <p class="lg:text-[1rem] font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="progress-card space-y-4 lg:w-60">
+                    <div class="radial-progress text-warning" style="--value:90; --size:7.5rem; --thickness: 0.5rem;" role="progressbar">90%</div>
+                    <h5 class="text-xl font-semibold">Senior Player</h5>
+                    <p class="lg:text-[1rem] font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="progress-card space-y-4 lg:w-60">
+                    <div class="radial-progress text-info" style="--value:80; --size:7.5rem; --thickness: 0.5rem;" role="progressbar">80%</div>
+                    <h5 class="text-xl font-semibold">Training Ground</h5>
+                    <p class="lg:text-[1rem] font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
     <footer></footer>
 </body>
 </html>
