@@ -30,6 +30,7 @@
                         'telephone':'rgba(188, 237, 109, 0.10)',
                         'email':'rgba(253, 221, 95, 0.10)',
                         'location':'rgba(98, 156, 243, 0.10)',
+                        'inputbg':'rgba(19, 19, 24, 0.03)',
 
 
                     }
@@ -154,7 +155,7 @@
             </div>
         </section>
         <!-- program section starts  -->
-        <section class="program text-center my-[8.25rem]">
+        <section class="program text-center my-[4.25rem]">
           <h1 class="lg:text-4xl font-extrabold lg:mb-6 ">Program Sections</h1>
             <p class="lg:text-[1rem] lg:mb-20 mb-12 font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
           <div class="grid grid-cols-1  lg:grid-cols-2  items-center gap-4">
@@ -180,7 +181,7 @@
           </div>
         </section>
         <!-- new product section  -->
-        <section class="new-product program text-center my-[8.25rem]">
+        <section class="new-product program text-center my-[4.25rem]">
 
           <h1 class="lg:text-4xl font-extrabold lg:mb-6 ">Program Sections</h1>
             <p class="lg:text-[1rem] lg:mb-20 mb-12  font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
@@ -261,7 +262,7 @@
             </div>
         </section>
         <!-- clients Questions Section  -->
-        <section class="new-product program text-center my-[8.25rem]">
+        <section class="new-product program text-center my-[4.25rem]">
 
           <h1 class="lg:text-4xl font-extrabold lg:mb-6 ">Clients Question</h1>
             <p class="lg:text-[1rem] lg:mb-20 mb-12  font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
@@ -326,11 +327,11 @@
               </div>
          </section>
          <!-- get in touch section starts  -->
-          <section class="get-in-touch program text-center my-[8.25rem]">
+          <section class="get-in-touch program text-center my-[4.25rem]">
             <h1 class="lg:text-4xl font-extrabold lg:mb-6 ">Get In Touch</h1>
               <p class="lg:text-[1rem] lg:mb-20 mb-12  font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
               <div class="form-container flex flex-col lg:flex-row">
-                <div class="contact p-6 w-[21rem] lg:w-full flex flex-col gap-4 lg:gap-6 mx-auto lg:mx-0">
+                <div class="contact p-6 w-[21rem] lg:w-[29rem] flex flex-col gap-4 lg:gap-6 mx-auto lg:mx-0">
                   <div class="lg:w-[23.37rem] lg:h-[13.5rem] bg-telephone lg:p-8 p-6 text-left rounded-md w-full">
                     <img src="./images/Group 1171275317.png" class="mb-6" alt="">
                     <p class="leading-8 text-xl">
@@ -357,22 +358,68 @@
                     </h5>
                   </div>
                 </div>
-                <form class="text-left">
-                  <div class="flex flex-col lg:flex-row">
-                    <label for="name">
-                        <h5>Your Name</h5>
-                      <input type="text" class="w-full h-16" name="name" id="name ">
+                <form class="text-left p-6 lg:w-full flex flex-col gap-6">
+                  <div class="flex flex-col lg:flex-row justify-between gap-6">
+                    <label for="name" class="flex-grow" >
+                        <h5 class="pb-4 text-xl font-bold">Your Name</h5>
+                      <input type="text" class="w-full h-16 lg:py-[1.31rem] bg-inputbg rounded lg:pl-5 pl-3" name="name" id="name " placeholder="Enter your name">
                     </label>
-                    <label for="email">
-                        <h5>Your Email</h5>
-                      <input type="text" name="email" id="email">
+                    <label for="email" class="flex-grow">
+                        <h5 class="pb-4 text-xl font-bold">Your Email</h5>
+                      <input type="text" class="w-full h-16 lg:py-[1.31rem] rounded bg-inputbg lg:pl-5 pl-3" name="email" id="email" placeholder="Enter your email">
                     </label>
 
                   </div>
+                  <div class="flex flex-col lg:flex-row justify-between gap-6">
+                    <label for="name" class="flex-grow" >
+                        <h5 class="pb-4 text-xl font-bold">Subject</h5>
+                      <input type="text" class="w-full h-16 lg:py-[1.31rem] rounded bg-inputbg lg:pl-5 pl-3" name="name" id="name " placeholder="Enter your Subject">
+                    </label>
+                    <label for="email" class="flex-grow">
+                        <h5 class="pb-4 text-xl font-bold">Phone Number</h5>
+                      <input type="text" class="w-full h-16 lg:py-[1.31rem] rounded bg-inputbg lg:pl-5 pl-3" name="email" id="email" placeholder="Enter your phone number">
+                    </label>
+                  </div>
+                  <div class="flex flex-col lg:flex-row justify-between gap-6">
+                    <label for="name" class="flex-grow" >
+                        <h5 class="pb-4 text-xl font-bold">Message</h5>
+                        <textarea name="" id="" cols="30" rows="10" class="w-full lg:h-[23] resize-none bg-inputbg lg:py-[1.31rem]  text-white rounded lg:pl-5 pl-3" placeholder="write your message " ></textarea>
+                    </label>
+                  </div>
+                  <div>
+                    <input type="submit" class="btn bg-[#FF4240] text-white w-full h-16"  value="Send Message">
+                  </div>
                 </form>
+              </div>
+              <div class="text-center text-black bg-white mt-14 bg-inputbg lg:h-36 flex flex-col justify-center items-center gap-6">
+                <h1 class="text-2xl font-extrabold">Social Media</h1>
+                <p class="space-x-4 text-2xl"><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-github"></i></p>
               </div>
          </section>
     </main>
-    <footer></footer>
+    <footer class="bg-black">
+      <div class="footer p-10  text-white container mx-auto">
+        <nav class="text-white">
+          <header class="footer-title text-white">Get In Touch</header> 
+          <p class="text-white">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav class="text-white">
+          <header class="footer-title text-white">Company</header> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav class="text-white">
+          <header class="footer-title text-white">Legal</header> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </div>
+    </footer>
 </body>
 </html>
